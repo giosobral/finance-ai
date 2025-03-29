@@ -2,7 +2,7 @@
 
 import { Pie, PieChart } from "recharts";
 
-import { Card, CardContent } from "@/app/_components/ui/card";
+import { CardContent } from "@/app/_components/ui/card";
 import {
   ChartConfig,
   ChartContainer,
@@ -13,6 +13,7 @@ import { TransactionType } from "@prisma/client";
 import { TransactionPercentagePerType } from "@/app/_data/get-dashboard/types";
 import { PiggyBank, TrendingDown, TrendingUp } from "lucide-react";
 import PercentageItem from "./percentage-item";
+import { ScrollArea } from "@/app/_components/ui/scroll-area";
 
 const chartConfig = {
   [TransactionType.INVESTMENT]: {
@@ -61,7 +62,7 @@ const TransactionsPieChart = ({
   ];
 
   return (
-    <Card className="flex flex-col p-6">
+    <ScrollArea className="flex h-full flex-col rounded-md border p-6">
       <CardContent className="flex-1 pb-0">
         <ChartContainer
           config={chartConfig}
@@ -98,7 +99,7 @@ const TransactionsPieChart = ({
           />
         </div>
       </CardContent>
-    </Card>
+    </ScrollArea>
   );
 };
 
