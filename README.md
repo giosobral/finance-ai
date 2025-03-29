@@ -12,7 +12,4 @@ Um Gerenciador de Finanças com integração ao ChatGPT feito durante o Bootcamp
 ![](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
 Link do deploy: <br>
-https://fsw-donalds-git-main-giovane-sobral-oliveiras-projects.vercel.app
-
-
-Link do Deploy: https://finance-ai-sage.vercel.app/
+https://finance-ai-sage.vercel.app/
